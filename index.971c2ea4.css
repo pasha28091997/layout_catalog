@@ -1,0 +1,36 @@
+.main {
+  --column-count: 1;
+  grid-template-columns: repeat(var(--column-count), 200px);
+  grid-template-rows: repeat(2, 408px);
+  grid-auto-flow: row;
+  justify-content: center;
+  justify-items: center;
+  gap: 46px 48px;
+  padding: 50px 40px;
+  display: grid;
+}
+
+@media (width >= 100px) {
+  .main {
+    --column-count: 1;
+  }
+}
+
+@media (width >= 488px) {
+  .main {
+    --column-count: 2;
+  }
+}
+
+@media (width >= 768px) {
+  .main {
+    --column-count: 3;
+  }
+}
+
+@media (width >= 1024px) {
+  .main {
+    --column-count: 4;
+  }
+}
+/*# sourceMappingURL=index.971c2ea4.css.map */
